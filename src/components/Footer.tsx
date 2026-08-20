@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp, Mail, Linkedin, Download, GraduationCap, Heart, Code2 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
+import resumePdf from '../assets/resume.pdf';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -46,7 +47,7 @@ export const Footer: React.FC = () => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="/resume.pdf"
+              href={resumePdf}
               download="Anirudh_Astikar_Resume.pdf"
               className="hover:text-brand-amber transition-colors flex items-center gap-1.5"
             >

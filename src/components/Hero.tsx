@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDownRight, Terminal, Cloud, Layers, Check, Copy, ExternalLink, ShieldCheck, Zap } from 'lucide-react';
 import { PERSONAL_INFO, HERO_METRICS } from '../data/portfolioData';
+import profilePhoto from '../assets/IMG_6811.jpg';
 
 interface HeroProps {
   onCopyEmail: () => void;
@@ -139,7 +140,7 @@ export const Hero: React.FC<HeroProps> = ({ onCopyEmail, copied }) => {
                 <div className="flex items-center gap-4 mb-6">
                   <div className="relative w-20 h-20 rounded-2xl overflow-hidden border-2 border-brand-teal/40 shadow-lg shadow-brand-teal/10 flex-shrink-0 bg-surface-raised">
                     <img
-                      src="/IMG_6811.jpg"
+                      src={profilePhoto}
                       alt="Anirudh Astikar"
                       className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                     />

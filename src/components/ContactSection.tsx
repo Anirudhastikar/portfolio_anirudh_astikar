@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, Linkedin, Download, Copy, Check, Send, Sparkles, MessageSquare, ArrowRight } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
+import resumePdf from '../assets/resume.pdf';
 
 interface ContactSectionProps {
   onCopyEmail: () => void;
@@ -116,7 +117,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onCopyEmail, cop
             {/* Quick Action Links: Resume & LinkedIn */}
             <div className="grid grid-cols-2 gap-4">
               <a
-                href="/resume.pdf"
+                href={resumePdf}
                 download="Anirudh_Astikar_Resume.pdf"
                 className="p-5 rounded-2xl bg-[#0F1117] border border-white/10 hover:border-brand-teal/40 hover:bg-surface-raised transition-all flex flex-col justify-between group"
               >

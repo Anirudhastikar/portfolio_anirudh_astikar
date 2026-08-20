@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download, Mail, Check, Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
+import resumePdf from '../assets/resume.pdf';
 
 interface NavbarProps {
   onCopyEmail: () => void;
@@ -129,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onCopyEmail, copied }) => {
             </button>
 
             <a
-              href="/resume.pdf"
+              href={resumePdf}
               download="Anirudh_Astikar_Resume.pdf"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-[#08090C] bg-brand-teal hover:bg-[#34e2cb] shadow-lg shadow-brand-teal/20 transition-all hover:scale-105 active:scale-95"
             >
@@ -203,7 +204,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onCopyEmail, copied }) => {
                 {copied ? 'Email Copied!' : 'Copy Email Address'}
               </button>
               <a
-                href="/resume.pdf"
+                href={resumePdf}
                 download="Anirudh_Astikar_Resume.pdf"
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-semibold text-xs text-background bg-brand-teal hover:bg-brand-teal/90"
               >
