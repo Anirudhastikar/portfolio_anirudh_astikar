@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDownRight, Terminal, Cloud, Layers, Check, Copy, ExternalLink, ShieldCheck, Zap } from 'lucide-react';
 import { PERSONAL_INFO, HERO_METRICS } from '../data/portfolioData';
-import profilePhoto from '../assets/IMG_6811.jpg';
+import profilePhoto from '../assets/properly_dressed_photo.png';
 
 interface HeroProps {
   onCopyEmail: () => void;
