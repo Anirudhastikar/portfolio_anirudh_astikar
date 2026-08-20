@@ -36,7 +36,7 @@ export const PERSONAL_INFO = {
   email: "astikaranirudh2000@gmail.com",
   phone: "+91-8123996998",
   linkedin: "https://www.linkedin.com/in/anirudh-astikar-501157170/",
-  github: "https://github.com",
+  github: "https://github.com/Anirudhastikar",
   companyWebsite: "https://urneeds.com/",
   experienceYears: "3.5+",
   bio: "Results-driven Senior Software Engineer with 3.5+ years of experience building scalable healthcare and enterprise applications. Specializing in React Native, React.js, TypeScript, GraphQL, End-to-End Encryption (E2EE), and AWS cloud architectures (Amplify, AppSync, Lambda, SNS/SQS, CDK). Delivered production systems handling 10,000+ monthly reminders and core Hospital Management System modules powering real-time clinical workflows.",
